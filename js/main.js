@@ -2,7 +2,7 @@ let api_url = "https://api.thecatapi.com/v1/images/search?limit=10" ;
 
 
 async function actualizaGato(api){
-  let obtenerGato = await fetch(api); //La función fetch consiste en consultar la función api_url
+  let obtenerGato = await fetch(api); // la función api_url
   let dato = await obtenerGato.json(); 
   cargar_datos(dato);    
 }
